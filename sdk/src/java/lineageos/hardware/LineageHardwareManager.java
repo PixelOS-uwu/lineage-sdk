@@ -287,37 +287,37 @@ public final class LineageHardwareManager {
         try {
             switch (feature) {
                 case FEATURE_ADAPTIVE_BACKLIGHT:
-                    return IAdaptiveBacklight.getService(true);
+                    return (IBase) IAdaptiveBacklight.getService(true);
                 case FEATURE_ANTI_FLICKER:
-                    return IAntiFlicker.getService(true);
+                    return (IBase) IAntiFlicker.getService(true);
                 case FEATURE_AUTO_CONTRAST:
-                    return IAutoContrast.getService(true);
+                    return (IBase) IAutoContrast.getService(true);
                 case FEATURE_COLOR_BALANCE:
-                    return IColorBalance.getService(true);
+                    return (IBase) IColorBalance.getService(true);
                 case FEATURE_COLOR_ENHANCEMENT:
-                    return IColorEnhancement.getService(true);
+                    return (IBase) IColorEnhancement.getService(true);
                 case FEATURE_DISPLAY_COLOR_CALIBRATION:
-                    return IDisplayColorCalibration.getService(true);
+                    return (IBase) IDisplayColorCalibration.getService(true);
                 case FEATURE_DISPLAY_MODES:
-                    return IDisplayModes.getService(true);
+                    return (IBase) IDisplayModes.getService(true);
                 case FEATURE_PICTURE_ADJUSTMENT:
-                    return IPictureAdjustment.getService(true);
+                    return (IBase) IPictureAdjustment.getService(true);
                 case FEATURE_READING_ENHANCEMENT:
-                    return IReadingEnhancement.getService(true);
+                    return (IBase) IReadingEnhancement.getService(true);
                 case FEATURE_SUNLIGHT_ENHANCEMENT:
-                    return ISunlightEnhancement.getService(true);
+                    return (IBase) ISunlightEnhancement.getService(true);
                 case FEATURE_HIGH_TOUCH_POLLING_RATE:
-                    return IHighTouchPollingRate.getService(true);
+                    return (IBase) IHighTouchPollingRate.getService(true);
                 case FEATURE_HIGH_TOUCH_SENSITIVITY:
-                    return IGloveMode.getService(true);
+                    return (IBase) IGloveMode.getService(true);
                 case FEATURE_KEY_DISABLE:
-                    return IKeyDisabler.getService(true);
+                    return (IBase) IKeyDisabler.getService(true);
                 case FEATURE_KEY_SWAP:
-                    return IKeySwapper.getService(true);
+                    return (IBase) IKeySwapper.getService(true);
                 case FEATURE_TOUCH_HOVERING:
-                    return IStylusMode.getService(true);
+                    return (IBase) IStylusMode.getService(true);
                 case FEATURE_TOUCHSCREEN_GESTURES:
-                    return ITouchscreenGesture.getService(true);
+                    return (IBase) ITouchscreenGesture.getService(true);
             }
         } catch (NoSuchElementException | RemoteException e) {
         }
